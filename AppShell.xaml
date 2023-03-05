@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Mirror_Image_Photography.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Mirror_Image_Photography"
+    BackgroundColor="#00c3ff"
+    FlyoutBackgroundColor="Transparent"
+    FlyoutBackgroundImage="logowhiteback.png"
+    FlyoutBackgroundImageAspect="AspectFit"
+    FlyoutFooter="Dan Padgett Design"
+    FlyoutHeight="660"
+    FlyoutIcon="logo.ico"
+    FlyoutVerticalScrollMode="Disabled"
+    FlyoutWidth="215"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.NavBarHasShadow="true"
+    Shell.NavBarIsVisible="True">
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+
+            <Grid
+                Padding="0"
+                BackgroundColor="#00c3ff"
+                ColumnDefinitions="50, *">
+
+                <Image Aspect="Center" Source="{Binding Icon}" />
+                <Label
+                    Grid.Column="3"
+                    Margin="15"
+                    Padding="0"
+                    FontAttributes="Bold"
+                    FontFamily="Oswald"
+                    FontSize="16"
+                    HorizontalTextAlignment="Start"
+                    Text="{Binding Title}"
+                    TextColor="White"
+                    VerticalTextAlignment="End" />
+
+
+            </Grid>
+
+
+        </DataTemplate>
+
+    </Shell.ItemTemplate>
+
+
+
+    <FlyoutItem Title="HOME" Icon="home.svg">
+
+        <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="PORTFOLIO" Icon="cameraaccount.svg">
+
+
+        <ShellContent
+            Title="Settings"
+            ContentTemplate="{DataTemplate local:Portfolio}"
+            Icon="cameraaccount.svg" />
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="CONTACT" Icon="humangreeting.svg">
+
+        <ShellContent
+            Title="Contact"
+            ContentTemplate="{DataTemplate local:Contact}"
+            Icon="humangreeting.svg" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="AVAILABILITY" Icon="calendar.svg">
+
+        <ShellContent
+            Title="Availability"
+            ContentTemplate="{DataTemplate local:Availability}"
+            Icon="calendar.svg" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="ABOUT US" Icon="information.svg">
+
+        <ShellContent
+            Title="About Us"
+            ContentTemplate="{DataTemplate local:About}"
+            Icon="information.svg" />
+    </FlyoutItem>
+
+
+
+
+</Shell>

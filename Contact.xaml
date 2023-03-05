@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Mirror_Image_Photography.Contact"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CONTACT">
+
+    <ScrollView>
+        <Grid BackgroundColor="white">
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Padding="20">
+                <Label
+                    Margin="0,5,0,20"
+                    FontAttributes="Bold"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="CONTACT US"
+                    TextColor="#00c3ff" />
+                <Image
+                    Grid.Row="1"
+                    Margin="10,5,10,10"
+                    Aspect="AspectFit"
+                    Source="map.png" />
+
+                <Label
+                    Margin="0,28,0,5"
+                    FontAttributes="Bold"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="Our Address"
+                    TextColor="DarkSlateGrey" />
+                <Label
+                    Margin="0,5,0,20"
+                    FontFamily="Oswald"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    Text="Tristan da Cunha Volcano, St Helena, TDCU 1ZZ"
+                    TextColor="#00c3ff" />
+                <Label
+                    Margin="0,5,0,5"
+                    FontAttributes="Bold"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="Our Phone"
+                    TextColor="DarkSlateGrey" />
+                <Label
+                    Margin="0,5,0,20"
+                    FontFamily="Oswald"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    Text="Send Smoke Signals"
+                    TextColor="#00c3ff" />
+                <Label
+                    Margin="0,5,0,5"
+                    FontAttributes="Bold"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="Our Email"
+                    TextColor="DarkSlateGrey" />
+                <Label
+                    Margin="0,5,0,20"
+                    FontFamily="Oswald"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    Text="tdcenquiries@tdc-gov.com"
+                    TextColor="#00c3ff" />
+
+                <Label
+                    Padding="16"
+                    FontFamily="Oswald"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    SemanticProperties.Description="Welcome to the Mirror Image Photography"
+                    SemanticProperties.HeadingLevel="Level3"
+                    Text="Otherwise contact us through the form below"
+                    TextColor="DarkSlateGrey" />
+
+                <Entry
+                    x:Name="nameEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Text"
+                    Placeholder="Name"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Entry
+                    x:Name="emailEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Email"
+                    Placeholder="Email"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Entry
+                    x:Name="phoneEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Telephone"
+                    Placeholder="Phone"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Entry
+                    x:Name="subjectEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Text"
+                    Placeholder="Subject"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Editor
+                    x:Name="messageEditor"
+                    Margin="0,0,0,20"
+                    Keyboard="Text"
+                    Placeholder="Message"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Button
+                    Margin="0,0,0,25"
+                    BackgroundColor="#00c3ff"
+                    Clicked="OnSubmitClicked"
+                    FontFamily="Oswald"
+                    Text="Submit"
+                    TextColor="White" />
+                <Label
+                    Margin="0,10,0,20"
+                    FontSize="Micro"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Copywrite: Mirror Image Photography 2023"
+                    TextColor="DarkSlateGray" />
+            </StackLayout>
+
+
+
+        </Grid>
+
+    </ScrollView>
+</ContentPage>

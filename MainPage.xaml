@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Mirror_Image_Photography.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="HOME">
+
+
+    <ScrollView>
+
+
+        <ContentView BackgroundColor="White">
+            <VerticalStackLayout
+                Padding="0,0"
+                Spacing="0"
+                TranslationY="-10"
+                VerticalOptions="Center">
+
+
+                <CarouselView x:Name="carousel" Position="0">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Aspect="AspectFill" Source="{Binding}" />
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+                <Label
+                    Margin="0,20,0,0"
+                    FontFamily="Oswald"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    SemanticProperties.Description="Welcome to the Mirror Image Photography"
+                    SemanticProperties.HeadingLevel="Level2"
+                    Text="Welcome to Mirror Image Photography"
+                    TextColor="#00c3ff"
+                    TextTransform="Uppercase" />
+                <Button
+                    Margin="0,25,0,0"
+                    BackgroundColor="#00c3ff"
+                    CornerRadius="90"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HeightRequest="2"
+                    Text=""
+                    TextColor="White"
+                    WidthRequest="300" />
+                <Label
+                    Margin="0,-10,0,0"
+                    Padding="25"
+                    FontFamily="Oswald"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    SemanticProperties.Description="Welcome to the Mirror Image Photography"
+                    SemanticProperties.HeadingLevel="Level3"
+                    Text="Welcome to the home of professional photography, where we are dedicated to capturing the beauty and essence of life through the lens of a camera. Our team of skilled photographers has years of experience and a passion for their craft, allowing them to producestunning images that tell a story and evoke emotion. Whetheryou're looking for portraits, landscapes, or commercialphotography, we have the expertise and creativity to bring yourvision to life. We believe that photography is not just about taking pictures, but about capturing moments and preservingmemories that will last a lifetime. So take a look around oursite, explore our galleries, and let us know how we can help you capture the beauty of your world."
+                    TextColor="DarkGray" />
+                <Button
+                    Margin="0,0,0,0"
+                    BackgroundColor="#00c3ff"
+                    CornerRadius="90"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HeightRequest="2"
+                    Text=""
+                    TextColor="White"
+                    WidthRequest="300" />
+                <Label
+                    Margin="0,5,0,5"
+                    FontSize="Micro"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Tap on the top left icon to access all our app has to offer"
+                    TextColor="DarkSlateGray" />
+                <Button
+                    Margin="0,0,0,0"
+                    BackgroundColor="#00c3ff"
+                    CornerRadius="90"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HeightRequest="2"
+                    Text=""
+                    TextColor="White"
+                    WidthRequest="300" />
+                <Label
+                    Margin="0,35,0,0"
+                    FontSize="Micro"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Copyright © Mirror Image Photography 2023"
+                    TextColor="DarkSlateGray" />
+            </VerticalStackLayout>
+        </ContentView>
+
+
+    </ScrollView>
+</ContentPage>

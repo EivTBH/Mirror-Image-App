@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Mirror_Image_Photography.Availability"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AVAILABILITY">
+
+
+
+    <VerticalStackLayout BackgroundColor="White">
+        <StackLayout
+            Margin="50,10,50,20"
+            HorizontalOptions="Center"
+            Orientation="Horizontal"
+            VerticalOptions="Start">
+            <Button
+                BackgroundColor="#00c3ff"
+                Clicked="OnPrevMonthClicked"
+                FontFamily="Oswald"
+                Text="Prev"
+                TextColor="White" />
+            <Label
+                Margin="20,10,20,10"
+                FontFamily="Oswald"
+                FontSize="Medium"
+                Text="{Binding CurrentMonthYear}"
+                TextColor="#00c3ff"
+                VerticalOptions="CenterAndExpand" />
+            <Button
+                BackgroundColor="#00c3ff"
+                Clicked="OnNextMonthClicked"
+                FontFamily="Oswald"
+                Text="Next"
+                TextColor="White" />
+        </StackLayout>
+
+
+        <CollectionView
+            Grid.Row="1"
+            HorizontalOptions="Center"
+            ItemsSource="{Binding DaysInMonth}"
+            SelectionMode="None"
+            VerticalOptions="CenterAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        Margin="5,5,5,5"
+                        Padding="0"
+                        BackgroundColor="{Binding BackgroundColor}"
+                        BorderColor="Transparent"
+                        CornerRadius="040">
+                        <StackLayout>
+                            <Label
+                                FontFamily="Oswald"
+                                FontSize="Small"
+                                HorizontalOptions="Center"
+                                Text="{Binding DayOfMonth}"
+                                VerticalOptions="Center" />
+
+
+                        </StackLayout>
+
+
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="7" />
+            </CollectionView.ItemsLayout>
+
+
+        </CollectionView>
+        <Grid BackgroundColor="white">
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Padding="20">
+                <Label
+                    Margin="0,28,0,20"
+                    FontAttributes="Bold"
+                    FontFamily="Oswald"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="Book a photographer"
+                    TextColor="#00c3ff" />
+
+                <Label
+                    Margin="0,0,0,20"
+                    Padding="0"
+                    FontFamily="Oswald"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    SemanticProperties.Description="Welcome to the Mirror Image Photography"
+                    SemanticProperties.HeadingLevel="Level3"
+                    Text="Please enter your contact details and select the date/s you require and we will get back to you as soon as possible. Thank-you for choosing Mirror Image. "
+                    TextColor="DarkSlateGrey" />
+
+
+                <Entry
+                    x:Name="nameEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Text"
+                    Placeholder="Name"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Entry
+                    x:Name="emailEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Email"
+                    Placeholder="Email"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Entry
+                    x:Name="phoneEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Telephone"
+                    Placeholder="Phone"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Entry
+                    x:Name="subjectEntry"
+                    Margin="0,0,0,10"
+                    Keyboard="Text"
+                    Placeholder="Date"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Editor
+                    x:Name="messageEditor"
+                    Margin="0,0,0,20"
+                    Keyboard="Text"
+                    Placeholder="Service Required"
+                    PlaceholderColor="#00c3ff"
+                    TextColor="#00c3ff" />
+                <Button
+                    BackgroundColor="#00c3ff"
+                    Clicked="OnSubmitClicked"
+                    FontFamily="Oswald"
+                    Text="Submit"
+                    TextColor="White" />
+
+                <Label
+                    Margin="0,10,0,20"
+                    FontSize="Micro"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Copywrite: Mirror Image Photography 2023"
+                    TextColor="DarkSlateGray" />
+            </StackLayout>
+
+
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

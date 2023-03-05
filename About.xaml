@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Mirror_Image_Photography.About"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ABOUT">
+
+
+    <ScrollView BackgroundColor="White">
+        <StackLayout>
+
+            <Frame
+                Margin="20,20,20,0"
+                BackgroundColor="Transparent"
+                BorderColor="#00c3ff"
+                CornerRadius="10">
+                <StackLayout Margin="10">
+
+                    <Image
+                        Margin="0,0,0,0"
+                        Aspect="AspectFill"
+                        HeightRequest="300"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="artist2.jpg"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="300" />
+                    <Label
+                        Margin="0,0,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Andrea Voloshyn"
+                        TextColor="#00c3ff" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Favourite Style: Surrealism"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Hometown: Los Angeles, CA"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,20"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Email: AndreaVoloshyn@mirrorimage.com"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,0,0,10"
+                        FontSize="Medium"
+                        Text="Bio:"
+                        TextColor="#00c3ff" />
+                    <Label Text="Andrea is a fine art photographer based in Los Angeles. She specializes in creating dreamlike, surreal images that explore themes of identity, memory, and the natural world. Andrea draws inspiration from a wide range of sources, including literature, music, and mythology. She often uses double exposures and other experimental techniques to create images that blur the line between reality and imagination. In addition to her fine art work, Andrea also does commercial photography for a variety of clients. " TextColor="DarkSlateGray" />
+
+                </StackLayout>
+            </Frame>
+
+            <Frame
+                Margin="20,20,20,0"
+                BackgroundColor="Transparent"
+                BorderColor="#00c3ff"
+                CornerRadius="10">
+                <StackLayout Margin="10">
+
+                    <Image
+                        Margin="0,0,0,0"
+                        Aspect="AspectFill"
+                        HeightRequest="300"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="artist1.jpg"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="300" />
+                    <Label
+                        Margin="0,20,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Piotr Augustyniak"
+                        TextColor="#00c3ff" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Favourite Style: Urban Realism"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Hometown: Manhatten, NY"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,20"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Email: PiotrAugustyniak@mirrorimage.com"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,0,0,10"
+                        FontSize="Medium"
+                        Text="Bio:"
+                        TextColor="#00c3ff" />
+                    <Label Text="Piotr is a photographer based in New York City. He specializes in capturing the energy and vibrancy of urban life through street photography. Piotr has always been fascinated by the way light, shadow, and movement interact in the city, and he loves the challenge of finding interesting and unexpected compositions on the fly. When he's not out shooting, Piotr can usually be found scouring used bookstores for rare photobooks or teaching photography classes to students of all ages. " TextColor="DarkSlateGray" />
+                </StackLayout>
+            </Frame>
+
+
+            <Frame
+                Margin="20,20,20,0"
+                BackgroundColor="Transparent"
+                BorderColor="#00c3ff"
+                CornerRadius="10">
+                <StackLayout Margin="10">
+
+                    <Image
+                        Margin="0,0,0,0"
+                        Aspect="AspectFill"
+                        HeightRequest="300"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="artist3.jpg"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="300" />
+                    <Label
+                        Margin="0,20,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Robert Johnson"
+                        TextColor="#00c3ff" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Favourite Style: Portraits"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Hometown: Chicago, IL"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,20"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Email: RobertJohnson@mirrorimage.com"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,0,0,10"
+                        FontSize="Medium"
+                        Text="Bio:"
+                        TextColor="#00c3ff" />
+                    <Label Text="Robert is a portrait photographer based in Chicago. He specializes in capturing the unique personalities and stories of his subjects. Rob believes that every person has a story worth telling, and he strives to create images that reveal something essential about each individual he photographs. He is known for his ability to put his subjects at ease and to create a relaxed and comfortable environment on set. In his free time, Rob enjoys exploring the city's vibrant music scene and spending time with his dog, a rescue named Charlie. " TextColor="DarkSlateGray" />
+
+                </StackLayout>
+            </Frame>
+
+            <Frame
+                Margin="20,20,20,50"
+                BackgroundColor="Transparent"
+                BorderColor="#00c3ff"
+                CornerRadius="10">
+                <StackLayout Margin="10">
+
+                    <Image
+                        Margin="0,0,0,0"
+                        Aspect="AspectFill"
+                        HeightRequest="300"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="artist4.jpg"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="300" />
+                    <Label
+                        Margin="0,20,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Alice Summer"
+                        TextColor="#00c3ff" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Favourite Style: Cityscapes"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,0"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Hometown: NYC, NY"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,10,0,20"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Email: AndreaVoloshyn@mirrorimage.com"
+                        TextColor="DarkSlateGray" />
+                    <Label
+                        Margin="0,0,0,10"
+                        FontSize="Medium"
+                        Text="Bio:"
+                        TextColor="#00c3ff" />
+                    <Label Text="Alice is a street photographer based in New York City. Growing up in a small town in upstate New York, Alice always had an interest in photography, but it wasn't until she moved to the city to attend college that she discovered her passion for capturing the urban landscape. Alice's photographs focus on the people and places that make New York City unique. Her work often features candid shots of everyday people going about their lives, juxtaposed against the backdrop of the city's iconic buildings and landmarks. In addition to her street photography, Alice is also a skilled portrait photographer. Her portraits have been featured in several local art shows, and she has also done freelance work for a variety of clients, including musicians, actors, and business professionals. When she's not behind the camera, Alice enjoys hiking in the nearby Catskill Mountains, and spending time with her cat, Mittens." TextColor="DarkSlateGray" />
+
+                </StackLayout>
+            </Frame>
+            <Label
+                Margin="0,10,0,20"
+                FontSize="Micro"
+                HorizontalOptions="CenterAndExpand"
+                Text="Copywrite: Mirror Image Photography 2023"
+                TextColor="DarkSlateGray" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
